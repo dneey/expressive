@@ -35,7 +35,7 @@ app.use(function(req, res, next){
 app.use(expressValidator());
 app.get('/', function(req, res){
 	db.users.find(function (err, docs) {
-		consol.log(docs);
+		console.log(docs);
 		var title = 'customer';
 		res.render('index',{
 			title: title,
